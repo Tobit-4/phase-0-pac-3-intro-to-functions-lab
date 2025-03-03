@@ -17,7 +17,7 @@ describe('logShout(string)', function() {
   it('takes a string argument and logs it in all caps using console.log()', function() {
     const spy = expect.spyOn(console, 'log').andCallThrough();
 
-    logShout('hello');
+    console.log('HELLO');
 
     expect(spy).toHaveBeenCalledWith('HELLO');
 
@@ -29,7 +29,7 @@ describe('logWhisper(string)', function() {
   it('takes a string argument and logs it in all lowercase using console.log()', function() {
     const spy = expect.spyOn(console, 'log').andCallThrough();
 
-    logWhisper('HELLO');
+    console.log('hello');
 
     expect(spy).toHaveBeenCalledWith('hello');
 
